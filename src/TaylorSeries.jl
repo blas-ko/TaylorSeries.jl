@@ -38,6 +38,8 @@ include("TaylorN.jl")
 
 include("printing.jl")
 
+include("TaylorRec.jl")
+
 #docstrings
 include("helpDB.jl")
 
