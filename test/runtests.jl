@@ -97,8 +97,8 @@ facts("Tests for Taylor1 expansions") do
     @fact deriv( exp(ta(1.0)), 5 ) == exp(1.0)  --> true
     @fact deriv( exp(ta(1.0pi)), 3 ) == exp(1.0pi)  --> true
     @fact isapprox( deriv(exp(ta(1.0pi)), 10) , exp(1.0pi) )  --> true
-    @fact integTaylor(diffTaylor(exp(t)),1) == exp(t)  --> true
-    @fact integTaylor(cos(t)) == sin(t)  --> true
+    @fact integrate(diffTaylor(exp(t)),1) == exp(t)  --> true
+    @fact integrate(cos(t)) == sin(t)  --> true
 
     @fact promote(ta(0.0), t) == (ta(0.0),ta(0.0))  --> true
 
